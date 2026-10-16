@@ -1,16 +1,137 @@
-# React + Vite
+# 🎮 PS3 Pokédex
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive Pokémon explorer built with React that lets users browse Pokémon, search by name, and view detailed information about each Pokémon using the PokéAPI.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🏠 **Home Page:** A welcoming homepage with a link to explore Pokémon.
+- 🔍 **Search Pokémon:** Search Pokémon by name.
+- 🃏 **Pokémon Cards:** View Pokémon names, images, and numbers.
+- 📊 **Detailed Information:** View Pokémon types, height, weight, and base stats.
+- 🔄 **Loading & Error Handling:** Displays loading states, error messages, and a Try Again button.
+- 🧭 **Navigation:** Navigate between pages using React Router.
+- 🚫 **404 Page:** Shows a Not Found page for invalid routes.
+- 📱 **Responsive Design:** Works on desktop and mobile screens.
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- JavaScript
+- Vite
+- React Router DOM
+- HTML5
+- CSS3
+- [PokéAPI](https://pokeapi.co/)
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+ps3-pokedex/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── PokemonCard.jsx
+│   │   ├── PokemonDetails.jsx
+│   │   └── PokemonList.jsx
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+├── package-lock.json
+└── README.md
+
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js and npm installed on your computer.
+- An internet connection to fetch Pokémon data.
+
+### Installation
+
+1. Clone the repository:
+
+  
+   git clone https://github.com/anjalimishra-0007/ASS-4-ps-3-pokedex.git
+ 
+
+2. Navigate to the project directory:
+
+  
+   cd ps3-pokedex
+  
+
+3. Install dependencies:
+
+   
+   npm install
+  
+
+4. Start the development server:
+
+  
+   npm run dev
+  
+
+5. Open the local URL shown in your terminal.
+
+### Build for Production
+
+
+npm run build
+
+
+## 🧭 Application Routes
+
+| Route | Description |
+|---|---|
+| `/` | Homepage |
+| `/pokemon` | Pokémon list and search |
+| `/pokemon/:name` | Details of a selected Pokémon |
+| `*` | Not Found page |
+
+## 🌐 API Used
+
+This project uses the public [PokéAPI](https://pokeapi.co/) to retrieve Pokémon information.
+
+**Pokémon list endpoint:**
+
+
+https://pokeapi.co/api/v2/pokemon?limit=50
+
+
+**Individual Pokémon endpoint:**
+
+
+https://pokeapi.co/api/v2/pokemon/{name}
+
+
+## 📸 Screenshots
+
+Add screenshots of your actual application here.
+![actual application ](image-1.png)
+
+### Home Page
+
+![Pokédex Home Page](screenshots/home.png)
+
+### Pokémon Details Page
+
+![Pokémon Details Page](screenshots/details.png)
+
+> Replace these example screenshot paths with your actual screenshots and commit the screenshot files to your repository.
+
+## 🔗 Live Demo
+
+**Live Website:** https://ass-4-ps-3-pokedex.vercel.app/
+
+## 👩‍💻 Author
+
+Anjali Mishra
+---
+
+Made with ❤️ using React and PokéAPI.
