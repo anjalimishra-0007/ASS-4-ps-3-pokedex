@@ -123,7 +123,9 @@ Add screenshots of your actual application here.
 
 ![Pokémon Details Page](screenshots/details.png)
 
-> Replace these example screenshot paths with your actual screenshots and commit the screenshot files to your repository.
+### Additional Screenshot
+![Pokédex Screenshot](screenshots/image-1.png)
+
 
 ## 🔗 Live Demo
 
