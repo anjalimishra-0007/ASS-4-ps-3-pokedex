@@ -1,0 +1,409 @@
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.navbar {
+  width: 100%;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 7%;
+  background: #191d2e;
+}
+
+.navbar h2 {
+  color: #ffcb05;
+  margin: 0;
+  font-size: 24px;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.hero {
+  min-height: calc(100vh - 72px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 24px;
+}
+
+.hero .tagline {
+  color: #ffcb05;
+  letter-spacing: 3px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.hero h1 {
+  width: 100%;
+  max-width: 760px;
+  font-size: clamp(32px, 5vw, 56px);
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.hero p:not(.tagline) {
+  color: #c4c8d6;
+  max-width: 540px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.open-button {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 14px 25px;
+  background: #ffcb05;
+  color: #151515;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.open-button:hover {
+  background: #ffe16b;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 16px 5%;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+}
+
+.pokemon-page {
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.pokemon-page h1 {
+  color: #ffcb05;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.pokemon-page > p {
+  color: #bfc4d4;
+}
+
+.search-input {
+  width: min(100%, 420px);
+  padding: 14px 18px;
+  margin: 28px auto;
+  border: 1px solid #353b50;
+  border-radius: 12px;
+  background: #1a2032;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #ffcb05;
+}
+
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 20px auto;
+}
+
+.pokemon-card {
+  background: #1a2032;
+  border: 1px solid #30374c;
+  border-radius: 18px;
+  padding: 22px 16px;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-5px);
+  border-color: #ffcb05;
+}
+
+.pokemon-image {
+  width: 100%;
+  max-width: 170px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.pokemon-number {
+  color: #aab1c5;
+  font-size: 0.9rem;
+  margin: 12px 0 6px;
+}
+
+.pokemon-name {
+  color: white;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+}
+
+.details-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  background: #ffcb05;
+  color: #171717;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 9px;
+}
+
+.details-button:hover {
+  background: #f3b900;
+}
+
+.status {
+  text-align: center;
+  color: white;
+  padding: 40px 16px;
+}
+
+@media (max-width: 850px) {
+  .pokemon-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .pokemon-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pokemon-page {
+    padding: 28px 16px;
+  }
+}
+
+.navbar {
+  min-height: 72px;
+  padding: 16px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: #1a2032;
+}
+
+.logo {
+  color: #ffcb05;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.nav-link:hover {
+  color: #ffcb05;
+}
+
+.hero {
+  min-height: 75vh;
+  padding: 60px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-label {
+  color: #ffcb05;
+  letter-spacing: 4px;
+  font-weight: 700;
+}
+
+.hero h1 {
+  max-width: 700px;
+  color: #f4f4f8;
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  line-height: 1.2;
+  margin: 12px 0;
+}
+
+.hero-description {
+  max-width: 540px;
+  color: #bfc4d4;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.open-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 16px 28px;
+  border-radius: 10px;
+  background: #ffcb05;
+  color: #171717;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.open-button:hover {
+  background: #f3b900;
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 16px;
+  }
+
+  .nav-link {
+    margin-left: 8px;
+  }
+}
+
+.pokemon-details {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 30px 20px 50px;
+}
+
+.back-link {
+  display: inline-block;
+  color: #ffcb05;
+  text-decoration: none;
+  margin-bottom: 24px;
+}
+
+.details-card {
+  background: #1a2032;
+  border: 1px solid #30374c;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+}
+
+.details-image {
+  width: 220px;
+  height: 220px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.details-card h1 {
+  color: white;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+}
+
+.details-card h2 {
+  color: #ffcb05;
+  margin: 30px 0 18px;
+}
+
+.type-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.type-badge {
+  background: #30374c;
+  color: #ffcb05;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-transform: capitalize;
+}
+
+.pokemon-measurements {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 24px 0;
+  color: white;
+}
+
+.pokemon-measurements p {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stat-row {
+  display: grid;
+  grid-template-columns: 130px minmax(40px, 1fr) 35px;
+  gap: 12px;
+  align-items: center;
+  margin: 16px 0;
+  color: white;
+  text-align: left;
+}
+
+.stat-name {
+  text-transform: capitalize;
+}
+
+.stat-bar {
+  height: 12px;
+  background: #30374c;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.stat-fill {
+  height: 100%;
+  background: #ffcb05;
+  border-radius: 20px;
+}
+
+.stat-value {
+  text-align: right;
+}
+
+@media (max-width: 480px) {
+  .details-card {
+    padding: 20px 12px;
+  }
+
+  .pokemon-measurements {
+    gap: 30px;
+  }
+
+  .stat-row {
+    grid-template-columns: 95px minmax(30px, 1fr) 30px;
+    gap: 8px;
+    font-size: 0.85rem;
+  }
+}
+.retry-button {
+  padding: 10px 20px;
+  margin: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #f5c542;
+  color: #171717;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.retry-button:hover {
+  opacity: 0.85;
+}
